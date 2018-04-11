@@ -22,6 +22,4 @@
               <icon src="images/icon.png" density="hdpi" />
               <icon src="images/icon.png" density="xhdpi" />
      </platform>
-   
-   </icon>
 </widget>
