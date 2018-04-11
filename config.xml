@@ -4,6 +4,7 @@
     id          = "com.phonegap.example2"
     versionCode = "10"
     version     = "1.0.0" >
+    
   <name>Pitagorapp</name>
     
   <description>
@@ -11,7 +12,7 @@
        costruita con HTML5, Skeleton CSS e Javascript
   </description>
     
-  <author href="https://build.phonegap.com">
+  <author>
       Alessandro Visigalli
   </author>
     
@@ -22,5 +23,4 @@
               <icon src="images/icon.png" density="xhdpi" />
      </platform>
    
-   </icon>
 </widget>
