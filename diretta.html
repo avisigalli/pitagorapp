@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Pitagorapp</title>
+  <meta name="description" content="App per il teorema di Pitagora">
+  <meta name="author" content="Alessandro Visigalli">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- Javascript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src=js/funzioni.js> </script>
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" >
+        <img src=images/cover.jpg class=u-full-width>
+      </div>
+    <div class=row>
+		<div class="six columns">
+		<h4>Teorema di Pitagora</h4>
+        <h5>Formula diretta</h5>
+        <p>L'enunciato del teorema di Pitagora dice che  <i>" in un triangolo rettangolo
+         l'area del quadrato costruito sull'ipotenusa è <b>equivalente</b> alla somma delle
+         aree dei quadrati costruiti sui cateti"</i>.<br>
+         Ne consegue che, per trovare la misura dell'ipotenusa conoscendo i due cateti, si estrae
+         la radice quadrata del risultato di questa formula<br>
+         <b>i<sup>2</sup>=c1<sup>2</sup>+c2<sup>2</sup></b></p>
+		</div>
+		<div class="six columns">
+		<img src=images/triangolo.png class=u-full-width>
+		</div>
+    </div>
+    <div class=row>
+    <form name=diretta>
+		<div class="four columns">
+		<input type=number name=c1 required class=u-full-width placeholder="misura del cateto maggiore">
+		</div>
+		<div class="four columns">
+		<input type=number name=c2 required class=u-full-width placeholder="misura del cateto minore">
+		</div>
+		<div class="four columns">
+		<input type=reset class=button value=Annulla onclick=annulladiretta()><br>
+		<button type=button class=button onclick=calcolodiretta()>Calcola</button>
+		</div>
+    </form>    
+    </div>
+    <div class=row>
+		<div class="twelve columns">
+			<h4 id=ipotenusa> </h4>
+		</div>
+    </div>
+    <div class="row">
+      <div class="six columns" >
+		  <a href=index.html><button class=button style="width:200px">Indietro</button></a><br>
+	  </div>
+	  <div class="six columns" align=right>
+		   <button class="button-primary "  style="width:200px" onclick=esci()>Esci</button></a><br>
+	  </div>
+	</div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
